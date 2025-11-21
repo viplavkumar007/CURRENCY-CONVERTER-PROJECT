@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div id="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <label for="amt">Enter Amount=></label>
+                <input type="text" id="amt" placeholder="Enter Amount" value="1">
+            </div>
+            <div class="dropdown">
+                <div class="select-container">
+                    <div class="from">
+                        <h3>From</h3>
+                        <img id="fimg" src="https://flagsapi.com/US/flat/64.png" alt="flag" />
+                        <select name="Fcurrency" id="fcurrency">
+                            <option value="usd">USD</option>
+                            <option value="inr">INR</option>
+                            <option value="eur">EUR</option>
+                        </select>
+                    </div>
+                </div>
+                <i class="ri-arrow-left-right-line" style="font-weight: 900;font-size: 35px;"></i>
+                <div class="select-container">
+                    <div class="to">
+                        <h3>To</h3>
+                        <img id="timg" src="https://flagsapi.com/IN/flat/64.png" alt="flag" />
+                        <select name="Tcurrency" id="tcurrency">
+                            <option value="inr">INR</option>
+                            <option value="usd">USD</option>
+                            <option value="eur">EUR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="converted">
+                <label for="converted Amount" id="converted">Converted Amount=></label>
+                <span>
+                    <textarea name="ca" id="ca" rows="1" style="resize: none" placeholder="1USD=88.61 INR"></textarea>
+                </span>
+            </div>
+            <button id="btn">Convert</button>
+
+        </form>
+    </div>
+    <script src="countryCode.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

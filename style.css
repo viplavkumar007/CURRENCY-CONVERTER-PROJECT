@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+    background-color: rgb(89, 86, 83);
+}
+#container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: solid 2px gold;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(210, 207, 207);
+}
+#container h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: solid black 2px;
+    background-color: gold;
+    color: green;
+}
+.amount{
+    font-size: 25px;
+    font-weight: 500;
+}
+#amt::placeholder{
+    font-size:15px;
+    text-align: center;
+
+}
+#amt{
+    height: 25px;
+    border: solid gold 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: green;
+}
+#amt:focus{
+    color:red;
+    background-color: gold;
+    border: solid gold 2px;
+    
+}
+#ca{
+    height: 25px;
+    margin-top: 10px;
+    border: solid gold 2px;
+    color: green;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 5vh;
+}
+#ca:focus{
+    
+    background-color: gold;
+    color: red;
+
+}
+#converted{
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.converted{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+#fcurrency{
+    border: solid 2px gold;
+    font-size: 15px;
+    background-color: green;
+    color: gold;
+    height: 25px;    
+}
+#tcurrency{
+    border: solid 2px gold;
+    font-size: 15px;
+    background-color: green;
+    color: gold;
+    height: 25px;   
+}
+#btn{
+    border: solid black 2px;
+    padding: 5px;
+    background-color: gold;
+    color: green;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 20px;
+    cursor: pointer;
+}
+form input,textarea{
+    border: none;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vh;
+}
+.select-container img{
+    width: 30px;
+    max-width: 30px;
+    font-size: 30px;
+}
+.select-container{
+    display: flex;
+    gap: 5px;
+    border: solid gold 2px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.from{
+    display: flex;
+}
+.to{
+    display: flex;
+}
